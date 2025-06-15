@@ -1,13 +1,1 @@
-FROM ubuntu:latest
 
-# Install any dependencies, like bash
-RUN apt-get update && apt-get install -y bash
-
-# Copy your files into the container
-COPY . /app
-
-# Set working directory
-WORKDIR /app
-
-# If you have a script to run
-CMD ["bash", "your-script.sh"]
